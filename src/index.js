@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import NameTag from "./NameTag.js";
 import "./styles.css";
+import { names } from "./data.js";
 
 const App = () => (
   <div className="App">
