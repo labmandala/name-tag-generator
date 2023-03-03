@@ -4,6 +4,8 @@ import NameTag from "./NameTag.js";
 import "./styles.css";
 import { names } from "./data.js";
 
+const renderNameTag = (name) => <NameTag name={name.person} key={name.id} />;
+
 const App = () => (
   <div className="App">
     <h1>Name Tag Generator</h1>
