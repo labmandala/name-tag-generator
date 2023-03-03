@@ -7,6 +7,7 @@ import { names } from "./data.js";
 const renderNameTag = (name) => <NameTag name={name.person} key={name.id} />;
 
 const App = () => (
+  const NameTagElements = names.map(renderNameTag);
   <div className="App">
     <h1>Name Tag Generator</h1>
     <NameTag name="Sarah" />
