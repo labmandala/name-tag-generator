@@ -7,13 +7,15 @@ import "./styles.css";
 const renderNameTag = (name) => <NameTag name={name.person} key={name.id} />;
 
 class App extends Component {
-  const NameTagElements = names.map(renderNameTag);
-  return (
-    <div className="App">
-      <h1>Name Tag Generator</h1>
-      {NameTagElements}
-    </div>
-  );
+  render() {
+    const NameTagElements = names.map(renderNameTag);
+    return (
+      <div className="App">
+        <h1>Name Tag Generator</h1>
+        {NameTagElements}
+      </div>
+    );
+  }
 };
 
 const rootElement = document.getElementById("root");
