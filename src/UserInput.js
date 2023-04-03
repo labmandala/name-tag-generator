@@ -10,6 +10,11 @@ class UserInput extends Component {
     this.setState({ name: e.target.value });
   };
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.setState({ name: "" });
+  };
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
