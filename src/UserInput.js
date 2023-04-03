@@ -6,6 +6,10 @@ class UserInput extends Component {
     name: ""
   };
 
+  updateName = (e) => {
+    this.setState({ name: e.target.value });
+  };
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -13,6 +17,7 @@ class UserInput extends Component {
           type="text" 
           placeholder="Add a new name here..." 
           value={this.state.name}
+          onChange={this.updateName}
           />
         <input type="submit" value="Create Name Tag" />
       </form>
