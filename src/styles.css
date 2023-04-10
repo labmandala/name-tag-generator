@@ -9,7 +9,7 @@ input {
   font-size: 16px;
   border-radius: 3px;
 }
-input[type="text"] {
+input[type='text'] {
   width: 200px;
 }
 
@@ -21,6 +21,7 @@ input[type="text"] {
   margin: 20px 10px;
   display: inline-block;
   position: relative;
+  box-shadow: 1px 1px 6px 2px lightgrey;
 }
 .title {
   color: white;
@@ -36,7 +37,7 @@ input[type="text"] {
   margin: 10px 0;
   font-size: 60px;
   height: 90px;
-  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
 }
 .name-tag__delete {
   position: absolute;
